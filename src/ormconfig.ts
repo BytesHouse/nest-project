@@ -8,7 +8,8 @@ const config: PostgresConnectionOptions = {
   password: '34mlgsnil',
   database: 'postgres',
   entities: [__dirname + '/**/*.entity{.ts, .js}'],
-  synchronize: true,
+  synchronize: false,
+  migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
 };
 
 export default config;
